@@ -1,0 +1,125 @@
+{
+  "Routes": [
+    {
+      "Key": "notification-get-all",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": ["Bearer"],
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "role": "member"
+      },
+      "AddHeadersToRequest": {
+        "X-UserId": "Claims[sub] > value",
+        "X-Role": "Claims[role] > value"
+      },
+      "UpstreamPathTemplate": "/notifications",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/api/notifications",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8000
+        }
+      ]
+    },
+    {
+      "Key": "notification-get-by-id",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": ["Bearer"],
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "role": "member"
+      },
+      "AddHeadersToRequest": {
+        "X-UserId": "Claims[sub] > value",
+        "X-Role": "Claims[role] > value"
+      },
+      "UpstreamPathTemplate": "/notifications/{id}",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamPathTemplate": "/api/notifications/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8000
+        }
+      ]
+    },
+    {
+      "Key": "notification-create",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": ["Bearer"],
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "role": "admin"
+      },
+      "AddHeadersToRequest": {
+        "X-UserId": "Claims[sub] > value",
+        "X-Role": "Claims[role] > value"
+      },
+      "UpstreamPathTemplate": "/notifications",
+      "UpstreamHttpMethod": ["POST"],
+      "DownstreamPathTemplate": "/api/notifications",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8000
+        }
+      ]
+    },
+    {
+      "Key": "notification-update",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": ["Bearer"],
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "role": "admin"
+      },
+      "AddHeadersToRequest": {
+        "X-UserId": "Claims[sub] > value",
+        "X-Role": "Claims[role] > value"
+      },
+      "UpstreamPathTemplate": "/notifications/{id}",
+      "UpstreamHttpMethod": ["PUT"],
+      "DownstreamPathTemplate": "/api/notifications/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8000
+        }
+      ]
+    },
+    {
+      "Key": "notification-delete",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": ["Bearer"],
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "role": "admin"
+      },
+      "AddHeadersToRequest": {
+        "X-UserId": "Claims[sub] > value",
+        "X-Role": "Claims[role] > value"
+      },
+      "UpstreamPathTemplate": "/notifications/{id}",
+      "UpstreamHttpMethod": ["DELETE"],
+      "DownstreamPathTemplate": "/api/notifications/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8000
+        }
+      ]
+    }
+  ]
+}
+
