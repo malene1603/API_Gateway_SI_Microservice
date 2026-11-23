@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BzmzsrEYr7w=",
+  "dgSpecHash": "e4uiMcP9DLk=",
   "success": true,
-  "projectFilePath": "/Users/malenevonwildenradt/RiderProjects/api-gateway/src/api-gateway.csproj",
+  "projectFilePath": "/Users/malenevonwildenradt/RiderProjects/API_Gateway_SI_Microservice/api-gateway/src/api-gateway.csproj",
   "expectedPackageFiles": [
     "/Users/malenevonwildenradt/.nuget/packages/fluentvalidation/12.2.0/fluentvalidation.12.2.0.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/ipaddressrange/6.3.0/ipaddressrange.6.3.0.nupkg.sha512",
@@ -12,9 +12,7 @@
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/10.0.13/microsoft.aspnetcore.mvc.newtonsoftjson.10.0.13.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.bcl.cryptography/10.0.2/microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
-    "/Users/malenevonwildenradt/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.13/microsoft.extensions.dependencyinjection.abstractions.10.0.13.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.extensions.diagnosticadapter/3.1.32/microsoft.extensions.diagnosticadapter.3.1.32.nupkg.sha512",
-    "/Users/malenevonwildenradt/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.identitymodel.abstractions/8.19.2/microsoft.identitymodel.abstractions.8.19.2.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.19.2/microsoft.identitymodel.jsonwebtokens.8.19.2.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/microsoft.identitymodel.logging/8.19.2/microsoft.identitymodel.logging.8.19.2.nupkg.sha512",
@@ -29,9 +27,7 @@
     "/Users/malenevonwildenradt/.nuget/packages/swashbuckle.aspnetcore.swagger/10.3.0/swashbuckle.aspnetcore.swagger.10.3.0.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.3.0/swashbuckle.aspnetcore.swaggergen.10.3.0.nupkg.sha512",
     "/Users/malenevonwildenradt/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.3.0/swashbuckle.aspnetcore.swaggerui.10.3.0.nupkg.sha512",
-    "/Users/malenevonwildenradt/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
-    "/Users/malenevonwildenradt/.nuget/packages/system.identitymodel.tokens.jwt/8.19.2/system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512",
-    "/Users/malenevonwildenradt/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
+    "/Users/malenevonwildenradt/.nuget/packages/system.identitymodel.tokens.jwt/8.19.2/system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512"
   ],
   "logs": []
 }

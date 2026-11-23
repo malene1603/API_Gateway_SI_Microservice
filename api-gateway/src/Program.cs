@@ -19,11 +19,11 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Execute the faucet controller before Ocelot's terminal proxy pipeline.
+
 #pragma warning disable ASP0014
 app.UseEndpoints(endpoints => endpoints.MapControllers());
 #pragma warning restore ASP0014
-// These exercise headers must come from validated token claims, not the client.
+
 app.Use(async (context, next) =>
 {
     context.Request.Headers.Remove("X-UserId");

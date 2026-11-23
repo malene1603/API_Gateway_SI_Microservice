@@ -10,3 +10,8 @@ services:
       ASPNETCORE_HTTP_PORTS: "8080"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks: [default, bizcord-internal]
+
+networks:
+  bizcord-internal:
+    external: true

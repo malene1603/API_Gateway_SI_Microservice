@@ -6,10 +6,10 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Bizcord.ApiGateway.Services;
 
-
 public class CreateTokenOptions
 {
     public Dictionary<string, string> Claims { get; set; } = new();
+    public string? Audience { get; set; }
 }
 
 public class JwtTokenService
@@ -38,17 +38,14 @@ public class JwtTokenService
         }
 
         var tokenOptions = new JwtSecurityToken(
-            signingCredentials: signingCredentials,
+            issuer: "MicroserviceSI",
+            audience: options.Audience ?? "NotificationService",
+            claims: claims,
             expires: DateTime.UtcNow.AddHours(1),
-            claims: claims
+            signingCredentials: signingCredentials
         );
 
         var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
-        var authToken = new AuthenticationToken
-        {
-            Value = tokenString
-        };
-
-        return authToken;
+        return new AuthenticationToken { Value = tokenString };
     }
 }

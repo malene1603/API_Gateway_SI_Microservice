@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bizcord.ApiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1af5ca9ecb2da594487839fb90cbe6377f4edcca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1ca800c1fe696f18d9c0d667b78f50cb094e6d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bizcord.ApiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bizcord.ApiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
